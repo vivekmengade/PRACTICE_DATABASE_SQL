@@ -19,3 +19,9 @@ update student set address='Pune' where r_no=3;
 delete from student where r_no=1;
 delete from student;
 
+
+
+
+select * from student;
+select * from student where name = "vivek";
+select r_no, name from student;
