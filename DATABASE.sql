@@ -25,3 +25,15 @@ delete from student;
 select * from student;
 select * from student where name = "vivek";
 select r_no, name from student;
+
+
+
+
+select name from student where country='india';
+update set marks=marks+10 where name='nihar';
+select * from student where address = 'pune' and country = 'india';
+select name from student where address='mengadewadi' or country='india';
+select name from student;
+select concate('Vivek',' Mengade');
+select name from student where not address='pune';
+select name from student where address = 'pune';
