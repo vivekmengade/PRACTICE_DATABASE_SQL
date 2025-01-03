@@ -37,3 +37,12 @@ select name from student;
 select concate('Vivek',' Mengade');
 select name from student where not address='pune';
 select name from student where address = 'pune';
+
+
+
+
+
+
+select * from student;
+select r_no from student;
+select r_no , name from student;
