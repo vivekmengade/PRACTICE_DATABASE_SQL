@@ -67,3 +67,35 @@ select * from student where name not like 'a';
  select distinct * from student;
  insert into student values(7, 'damini', 'gangamner', '9874561230' , 20, 'Russia');
  select distinct * from student;
+
+
+
+
+
+
+
+create table supplier(id int, name varchar(10), Address varchar(20), city varchar(10), country varchar(20));
+ insert into costumer values(1, 'Vivek', 'Mengadewadi', 'Manchar', 'India');
+insert into costumer values(2, 'Daivik', 'Pimpri', 'Pune', 'India');
+insert into costumer values(3, 'Nihar', 'manchar','Manchar' , 'India');
+select * from Costumer;
+
+insert into supplier values(3, 'Nihar', 'manchar','Manchar' , 'India');
+insert into supplier values(2, 'Nihar', 'manchar','Manchar' , 'India');
+insert into supplier values(1, 'Raj', 'Pimpri','Pune' , 'India');
+select * from supplier;
+
+select city from costumer union select city from supplier;
+select city from costumer union select city from supplier order by city;
+select city from costumer union select city from supplier order by city desc;
+select country from costumer union select country from supplier;
+select name from costumer union select name from supplier;
+select name from costumer union all select name from supplier;
+select name from costumer where city ='pune' union select name from supplier where city='pune';
+select name,city from costumer where city ='pune' union select name,city from supplier where city='pune';
+select * from costumer where city = 'pune' union select * from supplier where city ='pune';
+select * from costumer where city = 'pune' union select * from supplier where city ='manchar';
+select * from costumer where city = 'manchar' union select * from supplier where city ='pune';
+select * from costumer where city = 'pune' union select * from supplier where city ='pune';
+select name from costumer intersect select name from supplier;
+select name from costumer intersect select name from supplier;
