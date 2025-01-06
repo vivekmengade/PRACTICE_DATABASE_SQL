@@ -99,3 +99,37 @@ select * from costumer where city = 'manchar' union select * from supplier where
 select * from costumer where city = 'pune' union select * from supplier where city ='pune';
 select name from costumer intersect select name from supplier;
 select name from costumer intersect select name from supplier;
+
+
+
+
+
+
+
+
+
+
+show databases;
+use practicedb;
+show tables;
+select name as sname from student;
+select name as snm from student;
+select * from student;
+select sr_no,name from student as stud;
+select name as smn from student;
+select sum(marks) from student;
+select max(marks) from student;
+select avg(marks) from student;
+select max(marks) from student;
+select min(marks) from student;
+select count(name) from student;
+select length(name) from student;
+select length(name) from student where name = 'vivek';
+select upper(name) from student;
+select lower(name) from student;
+create table cricket(c_id int auto_increament, name varchar(10) , primary key(c_id));
+create table football(f_id int auto_increament, name varchar(10) , primary key(f_id));
+insert into cricket(name) values('Vivek'),('Nihar'),('Amruta'),('Daivik');
+insert into football(name) values('Vivek'),('Nihar'),('Amruta'),('Daivik'),('suyash');
+select * from cricket;
+select * from football;
