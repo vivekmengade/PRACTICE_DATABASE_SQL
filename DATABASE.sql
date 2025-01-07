@@ -133,3 +133,20 @@ insert into cricket(name) values('Vivek'),('Nihar'),('Amruta'),('Daivik');
 insert into football(name) values('Vivek'),('Nihar'),('Amruta'),('Daivik'),('suyash');
 select * from cricket;
 select * from football;
+
+
+
+
+
+
+
+
+select c.c_id, c.name,f.c_id,f.name from cricket as c inner join football as f on c.name=f.name;
+select cricket.id, cricket.name , fotball.id, football.name from cricket inner join football on cricket.name=football.name;
+select * from cricket inner join football on cricket.name=football.name;
+select * from cricket left join football on cricket.name=football.name;
+select * from football right join cricket on cricket.name=football.name;
+select name,sum(marks) from student group by name order by name desc;
+select name, sum(marks) from student group by name order by name;
+select name, sum(marks) from student group by name having sum(marks)>70;
+select name, sum(marks) from student group by name having sum(marks)>80;
