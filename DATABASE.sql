@@ -150,3 +150,9 @@ select name,sum(marks) from student group by name order by name desc;
 select name, sum(marks) from student group by name order by name;
 select name, sum(marks) from student group by name having sum(marks)>70;
 select name, sum(marks) from student group by name having sum(marks)>80;
+
+
+
+
+
+today no push because installing angular for web dev
