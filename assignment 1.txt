@@ -1,0 +1,42 @@
+1. WRITE A QUERY TO DISPLAY ALL THE DETAILS FROM THE EMPLOYEE TABLE.
+  create table Employee(id int, name varchar(10), salary double);
+  insert into employee values(101, 'Vivek', 100000);
+  insert into employee values(102, 'Nihar', 150000);
+  insert into employee values(103, 'Amruta', 120000);
+  select * from employee;
+2.WAQTD NAMES OF ALL THE EMPLOYEES.
+  select name from employee;
+3.WAQTD NAME AND SALARY GIVEN TO ALL THE EMPLOYEES.
+  select name,salary from employee;
+4.WAQTD NAME AND COMMISSION GIVEN TO ALL THE EMPLOYEES.
+  alter table employee add (Comission double);
+  update employee set comssion=8.0 where id = 101;
+  update employee set comission=5.0 where id = 102;
+  update employee set comission=7.0 where id = 103;
+  select name, comission from employee;
+5.WAQTD EMPLOYEE ID AND DEPARTMENT NUMBER OF ALL THE EMPLOYEES IN EMP TABLE.
+  alter table employee add(department int);
+  update employee set department=01 where id = 103;
+  update employee set department=02 where id = 101;
+  update employee set department=01 where id = 102;
+  select name,department from employee;
+6.WAQTD ENAME AND HIREDATE OF ALL THE EMPLOYEES.
+  alter table employee add(hdate date);
+  update employee set hdate='2024/5/10' where id = 102;
+  update employee set hdate='2024/5/21' where id = 101;
+  update employee set hdate='2024/4/1' where id = 103;
+  select hdate,name from employee;
+7.WAQTD NAME AND DESIGNATION OF ALL THE EMPLPOYEES.
+  alter table employee add(designation varchar(20));
+  update employee set designation='co-founder' where id=101;
+  update employee set designation='manager' where id=102;
+  update employee set designation='lawyer' where id=103;
+  select name,designation from employee;
+8.WAQTD NAME , JOB AND SALARY GIVEN ALL THE EMPLOYEES.
+  select designation,salary,name from employee;
+9.WAQTD DNAMES PRESENT IN DEPARTMENT TABLE.
+  create table department (D_name varchar(20), D_no int);
+  insert into department values('founder', 2);
+  insert into department values('HOD', 3);
+  insert into department values('Doc', 1);
+  select * from department;
